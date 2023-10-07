@@ -96,16 +96,16 @@ def main():
         checkbox.pack()
         software_var[name] = var
 
-
     # Installation button
-    install_button = tk.Button(root, text="Установить",
-                               command=lambda: install_software(
-                                   remote_hosts_entry.get(),
-                                   username_entry.get(),
-                                   password_entry.get(),
-                                   software_choices,
-                                   software_var,
-                               )
+    install_button = tk.Button(
+        root, text="Установить",
+        command=lambda: install_software(
+            remote_hosts_entry.get(),
+            username_entry.get(),
+            password_entry.get(),
+            software_choices,
+            software_var,
+        )
     )
     install_button.pack()
 
